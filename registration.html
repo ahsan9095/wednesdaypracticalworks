@@ -1,0 +1,152 @@
+<!doctype html>
+
+<html>
+<head>
+
+
+
+</head>
+
+<body>
+<div id="container">
+ <h1> Student Registration Form </h1>
+ 
+ <form method="post" action="/person">
+ 
+  <div class="userinput">
+   <label> First Name  </label>
+   <input type="text" name="firstName" value="" />
+  </div>
+  
+  <div class="userinput">
+   <label> Last Name  </label>
+   <input type="text" name="lastName" value="" />
+  </div>
+  
+  <div class="userinput">
+   <label> Email </label>   
+   <input type="text" name="email" value="" />
+  </div>
+  
+  <div class="userinput">
+   <label> Gender </label>
+   <input type="radio" name="gender" value="male"/> Male
+   <input type="radio" name="gender" value="Female" /> Female    
+  </div>
+  
+  <div class="userinput">
+   <label> Choose Subjects </label>    
+   <input type="checkbox" name="subject" value="OOP"/> OOP
+   <input type="checkbox" name="subject" value="DB" checked/> Database
+   <input type="checkbox" name="subject" value="Web"/> Web Technologies
+   <input type="checkbox" name="subject" value="Android"/> Android Dev. 
+  </div>
+  
+  <div class="userinput">
+   <label>Comments </label>
+   <textarea name="comments" palceholder="Search here" rows="7" cols="40"></textarea>
+  </div>
+  
+  <div class="userinput">
+   <label>City </label>
+   <select name="city">
+    <option value="Lahore">Lahore</option>
+    <option value="Karachi">Karachi</option>
+    <option value="Islamabad">Islamabad </option>
+   </select>
+  </div>
+  
+  <div style="text-align:center">
+   <input type="reset" class="sampleBtn"/>
+   <input type="submit" class="sampleBtn" value="Submit"/>   
+  </div>
+  
+ </form>
+ 
+ </div>
+
+
+
+ 
+ 
+</body>
+
+<style>body{
+
+
+      background-image:url("/images/st.jpg");
+       }
+    
+       h1{
+    
+        color: black;
+        text-align: center;
+       }
+    label{
+    
+    color:rgb(8, 8, 8);
+    width: 10%;
+    
+    display: inline-block;
+    
+    }
+    
+    #container{
+    
+    
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1%;
+    
+
+
+    
+    margin-bottom: 1%;
+
+    
+    background-color: rgba(117, 190, 218, 0.5);     }
+    
+    .userinput{
+    
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 30px;
+    
+    }
+    label{
+    
+    color: black;
+    font-size: 16px;
+    }
+    textarea{
+    color: black;
+    font-size: 14px;
+    
+    
+    }
+    
+    select{
+    
+    color: purple;
+    }
+    
+    
+    .sampleBtn{
+    
+    background-color: #f1f1f1;
+    width: 20%;
+    height: 35px;
+    font-size: 16px;
+    
+    }
+    .sampleBtn:hover{
+    
+     color: white;
+     background-color:purple;
+     cursor: pointer;
+    }</style>
+
+</html>
